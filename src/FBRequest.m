@@ -15,7 +15,7 @@
  */
 
 #import "FBRequest.h"
-#import "JSON.h"
+#import "SBJSON.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // global
@@ -202,7 +202,7 @@ static const NSTimeInterval kTimeoutInterval = 180.0;
     }
     
     
-    SBJSON *jsonParser = [[SBJSON alloc] init];
+    SBJSONPasrer *jsonParser = [[SBJSONPasrer alloc] init];
     id result = [jsonParser objectWithString:responseString];
     [jsonParser release];
 
